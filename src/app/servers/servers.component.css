@@ -1,0 +1,17 @@
+
+  *{background:#E3516E}
+  div{
+    width: 100px;
+    height: 100px;
+    position:relative;}
+  #a{
+    background: #51B5A9;
+    border-radius:100px 0 0 0;left:592px;top:42px}
+  #b{
+    background:#FADE8B;
+    border-radius:0 100px 0 0;left:692px;top:-58px;
+  }
+  #c{
+    background:#F7F3D7;
+    border-radius:0 0 0 100px;top:-58px;left:592px;
+  }

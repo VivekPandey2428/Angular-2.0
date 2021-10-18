@@ -1,0 +1,26 @@
+body{
+    margin:0;
+    padding:0;
+    background:#4a3083;
+    height:700px;
+    width:100%;
+}
+.a{
+    height:300px;
+    width:300px;
+    background:#fff;
+    border-radius:50%;
+    position:relative;
+    top:25%;
+    left:40%;
+}
+.b{
+    height:150px;
+    width:150px;
+    background:#4a3083;
+    border-radius:0 0 0 150px;
+    position:relative;
+    top:150px;
+    left:-1px;
+    box-shadow:0px 150px 0 #fff;
+}
