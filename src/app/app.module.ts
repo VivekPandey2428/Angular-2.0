@@ -4,12 +4,14 @@ import { FormsModule } from '@angular/forms';
 import { ServerComponent } from './server/sever.component';
 import { AppComponent } from './app.component';
 import { ServersComponent } from './servers/servers.component';
+import { EventbindingComponent } from './eventbinding/eventbinding.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ServerComponent,
-    ServersComponent
+    ServersComponent,
+    EventbindingComponent
   ],
   imports: [
     BrowserModule,

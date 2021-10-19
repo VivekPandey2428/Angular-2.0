@@ -5,9 +5,31 @@
 <link href="https://fonts.googleapis.com/css2?family=Calligraffitti&family=Encode+Sans+SC:wght@100&family=Merriweather:wght@300&family=Sacramento&display=swap" rel="stylesheet">
   </head>
   <body>
+    <!--Property Binding by using button ..... A set Timeout function has been declared in the
+        servers.component.ts which disables the button initially for 2 secs after which the button gets activated.
+        <button class="btn btn-primary " [disabled]="!allowNewServer"> the disable in square bracket indicates that it is no longer 
+        only html property but it indicates to angular that we are using Property binding.
+        
+    -->
+    <button class="btn btn-primary " [disabled]="!allowNewServer" (click)="onCreateServer()">
+      Add Server
+    </button>
+    <p>{{serverCreationStatus}}</p>
+    <p>{{allowNewServer}}</p>
+    <!--Above para tag is String Interpolation where as we can also use Property binding to edit the innertext of para-->
+    <p [innerText]="allowNewServer"></p>
+    <!--Results as same as above. So if you want to use some value or text use string Interpolation but if you want to change some
+        Properties of HTML then use PropertyBinding.-->
 <div id="a"></div>
 <div id="b"></div>
 <div id="c"></div>
+
+ <label for="">Server Name</label>
+ <input type="text" 
+        class="form-control"
+        (input)="onServerName($event)"
+ >
+ <p>{{newserver}}</p>
     
   </body>
 </html>

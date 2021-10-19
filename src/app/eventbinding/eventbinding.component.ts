@@ -1,12 +1,11 @@
 import { Component, OnInit } from '@angular/core';
-import { FormsModule } from '@angular/forms';
 
 @Component({
-  selector: 'app-servers',
-  templateUrl:'./servers.component.html' ,
-  styleUrls: ['./servers.component.css']
+  selector: 'app-eventbinding',
+  templateUrl: './eventbinding.component.html',
+  styleUrls: ['./eventbinding.component.css']
 })
-export class ServersComponent implements OnInit {
+export class EventbindingComponent implements OnInit {
   allowNewServer=false;
   serverCreationStatus='No Server is Created.';
   newserver='';
@@ -24,5 +23,4 @@ export class ServersComponent implements OnInit {
   onServerName(event:Event){
     this.newserver=(<HTMLInputElement>event.target).value;
   }
-
 }
